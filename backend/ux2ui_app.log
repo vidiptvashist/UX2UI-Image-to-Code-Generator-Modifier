@@ -1,0 +1,395 @@
+2025-07-07 01:39:09,004 [INFO] Received upload request for app: demo, file: sample00.png
+2025-07-07 01:39:09,008 [INFO] Saved uploaded image to: temp_uploads\66fe72d3e2df4208b63621d472ad0f58.png
+2025-07-07 01:39:38,924 [INFO] Generated HTML from image
+2025-07-07 01:39:38,926 [INFO] Parsed HTML
+2025-07-07 01:39:38,927 [ERROR] Error during UX processing
+Traceback (most recent call last):
+  File "C:\Users\Vidipt\Desktop\project\ui2ux\backend\ux2ui\app.py", line 62, in process_ux_from_image
+    explanation = explanationHTML(html_code)
+TypeError: explanationHTML() missing 1 required positional argument: 'html_code'
+2025-07-07 01:41:23,942 [INFO] Received upload request for app: demo, file: sample00.png
+2025-07-07 01:41:23,953 [INFO] Saved uploaded image to: temp_uploads\f0633d36eb1e4518a3df5a32c83bd917.png
+2025-07-07 01:41:50,255 [INFO] Generated HTML from image
+2025-07-07 01:41:50,257 [INFO] Parsed HTML
+2025-07-07 01:41:50,258 [INFO] <html>
+<head>
+    <title>Google</title>
+    <script src="https://cdn.jsdelivr.net/npm/react@18.0.0/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.0.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Fallback for Google's specific font */
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            color: #202124;
+        }
+        /* Tailwind custom configuration (optional, but good for precise colors) */
+        /* This is typically done in a tailwind.config.js, but for a single HTML file,
+           we can approximate with direct classes or inline styles. */
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const GoogleLogo = () => (
+            <div className="text-center my-6">
+                <span className="text-[92px] font-normal tracking-[-2px]" style={{ fontFamily: 'Product Sans, Arial, sans-serif' }}>
+                    <span style={{color: '#4285F4'}}>G</span>
+                    <span style={{color: '#EA4335'}}>o</span>
+                    <span style={{color: '#F9BC05'}}>o</span>
+                    <span style={{color: '#4285F4'}}>g</span>
+                    <span style={{color: '#34A853'}}>l</span>
+                    <span style={{color: '#EA4335'}}>e</span>
+                </span>
+            </div>
+        );
+
+        const App = () => (
+            <div className="flex flex-col min-h-screen">
+                {/* Header */}
+                <header className="flex justify-end items-center p-4 text-sm text-[#202124] space-x-4">
+                    <a href="#" className="hover:underline">Gmail</a>
+                    <a href="#" className="hover:underline">Images</a>
+                    <div className="p-2 rounded-full hover:bg-gray-100 cursor-pointer">
+                        <i className="fas fa-th text-xl text-gray-600"></i>
+                    </div>
+                    <a href="#" className="relative flex items-center justify-center w-9 h-9 rounded-full overflow-hidden bg-gray-200">
+                        <img 
+                            src="https://placehold.co/36x36/cccccc/white/png?text=JD" 
+                            alt="User profile picture, a circular placeholder with initials JD" 
+                            className="w-full h-full object-cover" 
+                        />
+                    </a>
+                </header>
+
+                {/* Main Content */}
+                <main className="flex-grow flex flex-col items-center justify-center mt-[-100px]"> {/* Adjust mt to visually center content above footer */}
+                    <GoogleLogo />
+
+                    <div className="relative w-[582px] max-w-[90%] mx-auto mt-6">
+                        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500">
+                            <i className="fas fa-search"></i>
+                        </div>
+                        <input
+                            type="text"
+                            className="w-full h-12 rounded-full border border-gray-300 shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 focus:shadow-md px-12 py-3 text-gray-900"
+                        />
+                        <div className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500">
+                             <i className="fas fa-microphone"></i>
+                        </div>
+                    </div>
+
+                    <div className="flex space-x-2 mt-7">
+                        <button className="bg-gray-100 hover:bg-gray-200 text-sm text-[#3c4043] py-2 px-4 rounded-md border border-transparent hover:border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-300">
+                            Google Search
+                        </button>
+                        <button className="bg-gray-100 hover:bg-gray-200 text-sm text-[#3c4043] py-2 px-4 rounded-md border border-transparent hover:border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-300">
+                            I'm Feeling Lucky
+                        </button>
+                    </div>
+
+                    <div className="mt-7 text-sm text-[#4d5156]">
+                        Google offered in: <a href="#" className="text-[#1a0dab] hover:underline">Melayu</a>
+                    </div>
+                </main>
+
+                {/* Footer */}
+                <footer className="w-full bg-[#f2f2f2] text-sm text-[#70757a] py-0">
+                    <div className="px-8 py-4 border-b border-[#dadce0]">
+                        Malaysia
+                    </div>
+                    <div className="flex flex-col md:flex-row justify-between items-center px-8 py-4">
+                        <div className="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-6 mb-2 md:mb-0">
+                            <a href="#" className="hover:underline whitespace-nowrap">Advertising</a>
+                            <a href="#" className="hover:underline whitespace-nowrap">Business</a>
+                            <a href="#" className="hover:underline whitespace-nowrap">About</a>
+                            <a href="#" className="hover:underline whitespace-nowrap">How Search works</a>
+                        </div>
+                        <div className="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6">
+                            <a href="#" className="hover:underline whitespace-nowrap">Privacy</a>
+                            <a href="#" className="hover:underline whitespace-nowrap">Terms</a>
+                            <a href="#" className="hover:underline whitespace-nowrap">Settings</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        );
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
+2025-07-07 01:41:50,278 [ERROR] Error during UX processing
+Traceback (most recent call last):
+  File "C:\Users\Vidipt\Desktop\project\ui2ux\backend\ux2ui\app.py", line 62, in process_ux_from_image
+    explanation = explanationHTML(html_code)
+TypeError: explanationHTML() missing 1 required positional argument: 'html_code'
+2025-07-07 01:41:59,689 [INFO] Received upload request for app: demo, file: sample00.png
+2025-07-07 01:41:59,691 [INFO] Saved uploaded image to: temp_uploads\712d702afad14aad9aed519802b827a1.png
+2025-07-07 01:42:25,647 [INFO] Generated HTML from image
+2025-07-07 01:42:25,650 [INFO] Parsed HTML
+2025-07-07 01:42:25,650 [INFO] <html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <script src="https://cdn.jsdelivr.net/npm/react@18.0.0/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.0.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Common Google font substitute */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom styles for the search bar shadow to match Google's subtle effect */
+        .search-input-wrapper {
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+            border: 1px solid #dfe1e5; /* Explicit border color to match screenshot */
+        }
+        .search-input-wrapper:hover {
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%), 0 1px 6px rgb(32 33 36 / 28%);
+            border-color: #dfe1e5; /* Keep border color consistent */
+        }
+        .search-input-wrapper:focus-within {
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%), 0 1px 6px rgb(32 33 36 / 28%);
+            border-color: #dfe1e5; /* Keep border color consistent */
+        }
+        .google-logo {
+            width: 272px; 
+            height: 92px; 
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-white">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div className="flex flex-col min-h-screen">
+                    {/* Header */}
+                    <header className="flex justify-end p-4 items-center text-sm">
+                        <a href="#" className="mr-4 text-gray-700 hover:underline">Gmail</a>
+                        <a href="#" className="mr-4 text-gray-700 hover:underline">Images</a>
+                        <div className="p-2 rounded-full hover:bg-gray-100 cursor-pointer mr-2">
+                            <i className="fas fa-th text-gray-700 text-lg"></i>
+                        </div>
+                        <img 
+                            src="https://placehold.co/32x32/cccccc/333333?text=User" 
+                            alt="User profile picture, a generic placeholder for a human avatar." 
+                            className="rounded-full w-8 h-8 cursor-pointer" 
+                        />
+                    </header>
+
+                    {/* Main Content */}
+                    <main className="flex-grow flex flex-col items-center justify-center -mt-24"> 
+                        <img 
+                            src="https://placehold.co/272x92/ffffff/000000?text=Google+Logo" 
+                            alt="Colorful Google logo with blue G, red o, yellow o, blue g, green l, red e on a white background." 
+                            className="mb-8 google-logo"
+                        />
+                        <div className="relative w-[584px] max-w-[90%] mx-auto mb-6 rounded-full flex items-center h-12 search-input-wrapper">
+                            <i className="fas fa-search text-gray-500 ml-4"></i>
+                            <input 
+                                type="text" 
+                                className="flex-grow h-full outline-none px-3 bg-transparent text-gray-800" 
+                                style={{ fontSize: '16px' }}
+                            />
+                            <i className="fas fa-microphone text-blue-500 mr-4 cursor-pointer"></i>
+                        </div>
+                        <div className="flex space-x-3 mb-6">
+                            <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-4 rounded-md text-sm cursor-pointer">Google Search</button>
+                            <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-4 rounded-md text-sm cursor-pointer">I'm Feeling Lucky</button>
+                        </div>
+                        <p className="text-sm text-gray-700">Google offered in: <a href="#" className="text-blue-700 hover:underline">Melayu</a></p>
+                    </main>
+
+                    {/* Footer */}
+                    <footer className="w-full bg-gray-100 text-gray-700 text-sm border-t border-gray-300">
+                        <div className="py-4 px-8">
+                            Malaysia
+                        </div>
+                        <div className="flex justify-between items-center py-4 px-8">
+                            <div className="flex space-x-6">
+                                <a href="#" className="hover:underline">Advertising</a>
+                                <a href="#" className="hover:underline">Business</a>
+                                <a href="#" className="hover:underline">About</a>
+                                <a href="#" className="hover:underline">How Search works</a>
+                            </div>
+                            <div className="flex space-x-6">
+                                <a href="#" className="hover:underline">Privacy</a>
+                                <a href="#" className="hover:underline">Terms</a>
+                                <a href="#" className="hover:underline">Settings</a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
+2025-07-07 01:42:48,525 [INFO] Generated explanation for HTML
+2025-07-07 01:42:48,525 [INFO] Deleted temporary file
+2025-07-07 01:52:45,649 [INFO] Received user change bg to black
+2025-07-07 01:53:07,706 [INFO] Generated HTML based on query: change bg to black
+2025-07-07 01:53:07,706 [INFO] Parsed HTML
+2025-07-07 01:53:07,707 [INFO] <html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <script src="https://cdn.jsdelivr.net/npm/react@18.0.0/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.0.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Common Google font substitute */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom styles for the search bar shadow to match Google's subtle effect */
+        .search-input-wrapper {
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+            border: 1px solid #dfe1e5; /* Explicit border color to match screenshot */
+        }
+        .search-input-wrapper:hover {
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%), 0 1px 6px rgb(32 33 36 / 28%);
+            border-color: #dfe1e5; /* Keep border color consistent */
+        }
+        .search-input-wrapper:focus-within {
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%), 0 1px 6px rgb(32 33 36 / 28%);
+            border-color: #dfe1e5; /* Keep border color consistent */
+        }
+        .google-logo {
+            width: 272px; 
+            height: 92px; 
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-white">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div className="flex flex-col min-h-screen">
+                    {/* Header */}
+                    <header className="flex justify-end p-4 items-center text-sm">
+                        <a href="#" className="mr-4 text-gray-700 hover:underline">Gmail</a>
+                        <a href="#" className="mr-4 text-gray-700 hover:underline">Images</a>
+                        <div className="p-2 rounded-full hover:bg-gray-100 cursor-pointer mr-2">
+                            <i className="fas fa-th text-gray-700 text-lg"></i>
+                        </div>
+                        <img 
+                            src="https://placehold.co/32x32/cccccc/333333?text=User" 
+                            alt="User profile picture, a generic placeholder for a human avatar." 
+                            className="rounded-full w-8 h-8 cursor-pointer" 
+                        />
+                    </header>
+
+                    {/* Main Content */}
+                    <main className="flex-grow flex flex-col items-center justify-center -mt-24"> 
+                        <img 
+                            src="https://placehold.co/272x92/ffffff/000000?text=Google+Logo" 
+                            alt="Colorful Google logo with blue G, red o, yellow o, blue g, green l, red e on a white background." 
+                            className="mb-8 google-logo"
+                        />
+                        <div className="relative w-[584px] max-w-[90%] mx-auto mb-6 rounded-full flex items-center h-12 search-input-wrapper">
+                            <i className="fas fa-search text-gray-500 ml-4"></i>
+                            <input 
+                                type="text" 
+                                className="flex-grow h-full outline-none px-3 bg-transparent text-gray-800" 
+                                style={{ fontSize: '16px' }}
+                            />
+                            <i className="fas fa-microphone text-blue-500 mr-4 cursor-pointer"></i>
+                        </div>
+                        <div className="flex space-x-3 mb-6">
+                            <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-4 rounded-md text-sm cursor-pointer">Google Search</button>
+                            <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-4 rounded-md text-sm cursor-pointer">I'm Feeling Lucky</button>
+                        </div>
+                        <p className="text-sm text-gray-700">Google offered in: <a href="#" className="text-blue-700 hover:underline">Melayu</a></p>
+                    </main>
+
+                    {/* Footer */}
+                    <footer className="w-full bg-gray-100 text-gray-700 text-sm border-t border-gray-300">
+                        <div className="py-4 px-8">
+                            Malaysia
+                        </div>
+                        <div className="flex justify-between items-center py-4 px-8">
+                            <div className="flex space-x-6">
+                                <a href="#" className="hover:underline">Advertising</a>
+                                <a href="#" className="hover:underline">Business</a>
+                                <a href="#" className="hover:underline">About</a>
+                                <a href="#" className="hover:underline">How Search works</a>
+                            </div>
+                            <div className="flex space-x-6">
+                                <a href="#" className="hover:underline">Privacy</a>
+                                <a href="#" className="hover:underline">Terms</a>
+                                <a href="#" className="hover:underline">Settings</a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
+2025-07-07 01:53:21,954 [INFO] Generated explanation for HTML
+2025-07-07 01:54:42,018 [INFO] Received user change bg to black
+2025-07-07 01:55:00,659 [INFO] Generated HTML based on query: change bg to black
+2025-07-07 01:55:00,660 [INFO] Parsed HTML
+2025-07-07 01:55:15,659 [INFO] Generated explanation for HTML
+2025-07-07 02:25:45,563 [INFO] Received upload request for app: demo, file: sample00.png
+2025-07-07 02:25:45,564 [INFO] Saved uploaded image to: temp_uploads\0ec6b50adfa6431da7cc5949644317ae.png
+2025-07-07 02:26:19,068 [INFO] Generated HTML from image
+2025-07-07 02:26:19,069 [INFO] Parsed HTML
+2025-07-07 02:26:40,364 [INFO] Generated explanation for HTML
+2025-07-07 02:26:40,365 [INFO] Deleted temporary file
+2025-07-07 02:27:09,805 [INFO] Received user change text colour to blue
+2025-07-07 02:27:23,047 [INFO] Generated HTML based on query: change text colour to blue
+2025-07-07 02:27:23,048 [INFO] Parsed HTML
+2025-07-07 02:27:32,276 [INFO] Generated explanation for HTML
+2025-07-07 02:27:45,962 [INFO] Received user change text colour to red
+2025-07-07 02:27:54,027 [INFO] Generated HTML based on query: change text colour to red
+2025-07-07 02:27:54,029 [INFO] Parsed HTML
+2025-07-07 02:28:02,268 [INFO] Generated explanation for HTML
+2025-07-07 02:29:40,540 [INFO] Received upload request for app: demo, file: sample00.png
+2025-07-07 02:29:40,542 [INFO] Saved uploaded image to: temp_uploads\f554aa7c181948919b0031b853d3b5d4.png
+2025-07-07 02:30:03,173 [INFO] Generated HTML from image
+2025-07-07 02:30:03,174 [INFO] Parsed HTML
+2025-07-07 02:30:24,152 [INFO] Generated explanation for HTML
+2025-07-07 02:30:24,153 [INFO] Deleted temporary file
+2025-07-07 02:35:17,116 [INFO] Received upload request for app: demo, file: sample00.png
+2025-07-07 02:35:17,118 [INFO] Saved uploaded image to: temp_uploads\9a190c1592264949aa792a91dd6238a8.png
+2025-07-07 02:35:47,159 [INFO] Generated HTML from image
+2025-07-07 02:35:47,165 [INFO] Parsed HTML
+2025-07-07 02:36:07,805 [INFO] Generated explanation for HTML
+2025-07-07 02:36:07,805 [INFO] Deleted temporary file
+2025-07-07 02:38:10,552 [INFO] Received upload request for app: demo, file: sample00.png
+2025-07-07 02:38:10,554 [INFO] Saved uploaded image to: temp_uploads\4cb4bfea4c724eb08f29cf27035550cc.png
+2025-07-07 02:38:23,534 [INFO] Generated HTML from image
+2025-07-07 02:38:23,536 [INFO] Parsed HTML
+2025-07-07 02:38:46,280 [INFO] Generated explanation for HTML
+2025-07-07 02:38:46,280 [INFO] Deleted temporary file
+2025-07-07 02:41:34,429 [INFO] Received user change background to white
+2025-07-07 02:41:42,450 [INFO] Generated HTML based on query: change background to white
+2025-07-07 02:41:42,451 [INFO] Parsed HTML
+2025-07-07 02:41:46,185 [INFO] Generated explanation for HTML
