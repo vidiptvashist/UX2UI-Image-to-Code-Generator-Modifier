@@ -1,0 +1,107 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <script src="https://cdn.jsdelivr.net/npm/react@18.0.0/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.0.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Common Google font substitute */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom styles for the search bar shadow to match Google's subtle effect */
+        .search-input-wrapper {
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+            border: 1px solid #dfe1e5; /* Explicit border color to match screenshot */
+        }
+        .search-input-wrapper:hover {
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%), 0 1px 6px rgb(32 33 36 / 28%);
+            border-color: #dfe1e5; /* Keep border color consistent */
+        }
+        .search-input-wrapper:focus-within {
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%), 0 1px 6px rgb(32 33 36 / 28%);
+            border-color: #dfe1e5; /* Keep border color consistent */
+        }
+        .google-logo {
+            width: 272px; 
+            height: 92px; 
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-white">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div className="flex flex-col min-h-screen">
+                    {/* Header */}
+                    <header className="flex justify-end p-4 items-center text-sm">
+                        <a href="#" className="mr-4 text-gray-700 hover:underline">Gmail</a>
+                        <a href="#" className="mr-4 text-gray-700 hover:underline">Images</a>
+                        <div className="p-2 rounded-full hover:bg-gray-100 cursor-pointer mr-2">
+                            <i className="fas fa-th text-gray-700 text-lg"></i>
+                        </div>
+                        <img 
+                            src="https://placehold.co/32x32/cccccc/333333?text=User" 
+                            alt="User profile picture, a generic placeholder for a human avatar." 
+                            className="rounded-full w-8 h-8 cursor-pointer" 
+                        />
+                    </header>
+
+                    {/* Main Content */}
+                    <main className="flex-grow flex flex-col items-center justify-center -mt-24"> 
+                        <img 
+                            src="https://placehold.co/272x92/ffffff/000000?text=Google+Logo" 
+                            alt="Colorful Google logo with blue G, red o, yellow o, blue g, green l, red e on a white background." 
+                            className="mb-8 google-logo"
+                        />
+                        <div className="relative w-[584px] max-w-[90%] mx-auto mb-6 rounded-full flex items-center h-12 search-input-wrapper">
+                            <i className="fas fa-search text-gray-500 ml-4"></i>
+                            <input 
+                                type="text" 
+                                className="flex-grow h-full outline-none px-3 bg-transparent text-gray-800" 
+                                style={{ fontSize: '16px' }}
+                            />
+                            <i className="fas fa-microphone text-blue-500 mr-4 cursor-pointer"></i>
+                        </div>
+                        <div className="flex space-x-3 mb-6">
+                            <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-4 rounded-md text-sm cursor-pointer">Google Search</button>
+                            <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-4 rounded-md text-sm cursor-pointer">I'm Feeling Lucky</button>
+                        </div>
+                        <p className="text-sm text-gray-700">Google offered in: <a href="#" className="text-blue-700 hover:underline">Melayu</a></p>
+                    </main>
+
+                    {/* Footer */}
+                    <footer className="w-full bg-gray-100 text-gray-700 text-sm border-t border-gray-300">
+                        <div className="py-4 px-8">
+                            Malaysia
+                        </div>
+                        <div className="flex justify-between items-center py-4 px-8">
+                            <div className="flex space-x-6">
+                                <a href="#" className="hover:underline">Advertising</a>
+                                <a href="#" className="hover:underline">Business</a>
+                                <a href="#" className="hover:underline">About</a>
+                                <a href="#" className="hover:underline">How Search works</a>
+                            </div>
+                            <div className="flex space-x-6">
+                                <a href="#" className="hover:underline">Privacy</a>
+                                <a href="#" className="hover:underline">Terms</a>
+                                <a href="#" className="hover:underline">Settings</a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
