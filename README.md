@@ -1,5 +1,5 @@
 
-# 🧠 UX2UI: Image-to-HTML Generator & Modifier
+# 🧠 UX2UI: Image-to-Code-Generator & Modifier
 
 A lightweight AI-powered web tool that converts UX design screenshots into HTML code, and allows users to modify the HTML using simple natural language queries.
 
