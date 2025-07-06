@@ -1,0 +1,5 @@
+{
+    "config": {
+        "model_api": "${MODEL_API_KEY}"
+    }
+}
