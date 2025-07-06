@@ -6,6 +6,8 @@ import shutil
 from fastapi import FastAPI, File, UploadFile, Form, HTTPException
 from fastapi.responses import JSONResponse
 
+
+
 # Extend path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
@@ -28,6 +30,18 @@ logger = logging.getLogger(__name__)
 
 # FastAPI app
 app = FastAPI()
+
+
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # or ["http://localhost:3000"] for React
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 UPLOAD_DIR = "temp_uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
@@ -78,7 +92,7 @@ async def generateHtml(
 
 
 @app.post("/modifyHTML/")
-async def generateHtml(
+async def modifyHtml(
     query: str = Form("change bg to black"),
     app_name: str = Form("demo")
 ):
@@ -102,7 +116,7 @@ async def generateHtml(
 
         return JSONResponse(content={
             "app_name": app_name,
-            "html_code": html_code,
+            "html_code": modify_html_code,
             "explanation": explanation
         })
 
