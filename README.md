@@ -156,7 +156,7 @@ app.add_middleware(
 
 ## 📸 UI Preview
 
-<img src="screenshot.png" alt="UX2UI Screenshot" width="700"/>
+<img src="![image](https://github.com/user-attachments/assets/a7a1903e-929f-4702-8cd0-c6f9c4874146)" alt="UX2UI Screenshot" width="700"/>
 
 ---
 
