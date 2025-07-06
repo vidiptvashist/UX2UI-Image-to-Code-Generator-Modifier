@@ -62,14 +62,6 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-**Create `requirements.txt`:**
-
-```txt
-fastapi
-uvicorn
-pillow
-```
-
 ### 3. Start the backend
 
 ```bash
@@ -117,24 +109,6 @@ Modifies the previously generated HTML using a natural language query.
 
 * `query`: e.g., `"change background to black"`
 * `app_name`: previously used name
-
----
-
-## ⚠️ CORS (optional)
-
-If you're accessing the backend from a different port or domain, add this to `app.py`:
-
-```python
-from fastapi.middleware.cors import CORSMiddleware
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-```
 
 ---
 
