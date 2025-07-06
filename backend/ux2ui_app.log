@@ -357,3 +357,39 @@ TypeError: explanationHTML() missing 1 required positional argument: 'html_code'
 2025-07-07 01:55:00,659 [INFO] Generated HTML based on query: change bg to black
 2025-07-07 01:55:00,660 [INFO] Parsed HTML
 2025-07-07 01:55:15,659 [INFO] Generated explanation for HTML
+2025-07-07 02:25:45,563 [INFO] Received upload request for app: demo, file: sample00.png
+2025-07-07 02:25:45,564 [INFO] Saved uploaded image to: temp_uploads\0ec6b50adfa6431da7cc5949644317ae.png
+2025-07-07 02:26:19,068 [INFO] Generated HTML from image
+2025-07-07 02:26:19,069 [INFO] Parsed HTML
+2025-07-07 02:26:40,364 [INFO] Generated explanation for HTML
+2025-07-07 02:26:40,365 [INFO] Deleted temporary file
+2025-07-07 02:27:09,805 [INFO] Received user change text colour to blue
+2025-07-07 02:27:23,047 [INFO] Generated HTML based on query: change text colour to blue
+2025-07-07 02:27:23,048 [INFO] Parsed HTML
+2025-07-07 02:27:32,276 [INFO] Generated explanation for HTML
+2025-07-07 02:27:45,962 [INFO] Received user change text colour to red
+2025-07-07 02:27:54,027 [INFO] Generated HTML based on query: change text colour to red
+2025-07-07 02:27:54,029 [INFO] Parsed HTML
+2025-07-07 02:28:02,268 [INFO] Generated explanation for HTML
+2025-07-07 02:29:40,540 [INFO] Received upload request for app: demo, file: sample00.png
+2025-07-07 02:29:40,542 [INFO] Saved uploaded image to: temp_uploads\f554aa7c181948919b0031b853d3b5d4.png
+2025-07-07 02:30:03,173 [INFO] Generated HTML from image
+2025-07-07 02:30:03,174 [INFO] Parsed HTML
+2025-07-07 02:30:24,152 [INFO] Generated explanation for HTML
+2025-07-07 02:30:24,153 [INFO] Deleted temporary file
+2025-07-07 02:35:17,116 [INFO] Received upload request for app: demo, file: sample00.png
+2025-07-07 02:35:17,118 [INFO] Saved uploaded image to: temp_uploads\9a190c1592264949aa792a91dd6238a8.png
+2025-07-07 02:35:47,159 [INFO] Generated HTML from image
+2025-07-07 02:35:47,165 [INFO] Parsed HTML
+2025-07-07 02:36:07,805 [INFO] Generated explanation for HTML
+2025-07-07 02:36:07,805 [INFO] Deleted temporary file
+2025-07-07 02:38:10,552 [INFO] Received upload request for app: demo, file: sample00.png
+2025-07-07 02:38:10,554 [INFO] Saved uploaded image to: temp_uploads\4cb4bfea4c724eb08f29cf27035550cc.png
+2025-07-07 02:38:23,534 [INFO] Generated HTML from image
+2025-07-07 02:38:23,536 [INFO] Parsed HTML
+2025-07-07 02:38:46,280 [INFO] Generated explanation for HTML
+2025-07-07 02:38:46,280 [INFO] Deleted temporary file
+2025-07-07 02:41:34,429 [INFO] Received user change background to white
+2025-07-07 02:41:42,450 [INFO] Generated HTML based on query: change background to white
+2025-07-07 02:41:42,451 [INFO] Parsed HTML
+2025-07-07 02:41:46,185 [INFO] Generated explanation for HTML

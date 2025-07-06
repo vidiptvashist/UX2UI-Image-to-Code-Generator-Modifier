@@ -1,1 +1,4 @@
 backend/.env
+backend/ux2ui_app.log
+backend/ux2ui_app.log
+*.log
