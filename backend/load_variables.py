@@ -18,4 +18,3 @@ with open(r'ux2ui\params.json') as f:
 genai.configure(api_key=api_key)
 
 model = genai.GenerativeModel("gemini-2.5-flash")
-
